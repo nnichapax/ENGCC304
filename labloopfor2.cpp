@@ -3,10 +3,10 @@ int main() {
     int number = 0 ;
     printf( "enter your number : " ) ;
     scanf( "%d", &number ) ;
-    if( number % 2 == 1 ) {
-        for( int i = 0 ; i <= number ; i++ ){
-            for( int j = 0 ; j <= number ; j++ ){
-                if( j == number - i + 1 ){
+    if( number % 2 == 0 ) {
+        for( int i = 0 ; i < number ; i++ ){
+            for( int j = 0 ; j < number ; j++ ){
+                if( j == i ){
                     printf( "1" ) ;
                 } else{
                    printf( "0" ) ;    
@@ -14,9 +14,9 @@ int main() {
             }
             printf( "\n" ) ;
         }
-    } else if( number % 2 == 0 ){
-        for( int i = 0 ; i <= number ; i++ ){
-            for( int j = 0 ; j <= number ; j++ ){
+    } else if( number % 2 == 1 ){
+        for( int i = number ; i != 0 ; i-- ){
+            for( int j = 1 ; j <= number ; j++ ){
                 if( j == i ){
                     printf( "1" ) ;
                 } else{
