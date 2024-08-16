@@ -10,10 +10,10 @@ int main() {
                     printf( "1" ) ;
                 } else{
                    printf( "0" ) ;    
-                }
-            }
+                }//end if-else
+            }//end for
             printf( "\n" ) ;
-        }
+        }//end for
     } else if( number % 2 == 1 ){
         for( int i = number ; i != 0 ; i-- ){
             for( int j = 1 ; j <= number ; j++ ){
@@ -21,10 +21,10 @@ int main() {
                     printf( "1" ) ;
                 } else{
                    printf( "0" ) ;    
-                }
-            }
+                }//end if-else
+            }//end for
             printf( "\n" ) ;
-        }
-    }
+        }//end for
+    }//end if-else
     return 0 ;
-}
+}//end function
