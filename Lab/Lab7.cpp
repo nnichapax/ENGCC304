@@ -72,6 +72,8 @@ int main() {
                 if( number < LOWER || number > HIGHER ) {
                     printf( "(Score=%d) \nGuess the winning number (%d-%d) : \n" ) ;
                     score -= 10 ;
+                    if (score < 0) score = 0 ;
+                        printf( "score=%d\n", score ) ;
                 } else if( number < random ) {
                     LOWER = number + 1 ;
                     score -= 10 ;
@@ -83,10 +85,11 @@ int main() {
                 } else if( number == random ) {
                     printf( "That is correct! The winning number is %d. \n Score this game: %d\n", random, score ) ;
                     break ;
-                } else if( score <= 0 ) {
-                    printf( "(Score=0) \n Try again later" ) ;
-                    break ;
                 } //end if
+                if( score == 0 ) {
+                    printf( "Game over please try again\n" ) ;
+                    break ;
+                }
             } //end while
             printf( "Do you want to play game (1=play,-1=exit) : \n" ) ;
             scanf( "%d", &number ) ;
