@@ -57,20 +57,27 @@ int main() {
 
     srand( time( NULL ) ) ;
     int number = 0, score = 100 ;
-    int LOWER = 0, HIGHER = 100 ;
+    int LOWER = 1, HIGHER = 100 ;
 
     printf( "Do you want to play game (1=play,-1=exit) : \n" ) ;
     scanf( "%d", &number ) ;
 
+    
     while( true ) {
-        score = 100, LOWER = 0, HIGHER = 100 ; //for reset
+        score = 100, LOWER = 1, HIGHER = 100 ; //for reset
         int random = rand() % 100 + 1 ;
+
         if( number == 1 ) {
             while( true ) {
+                
                 printf( "Guess the winning number (%d-%d) : \n", LOWER, HIGHER ) ;
                 scanf( "%d", &number ) ;
+                if( number <= 0 || number > 100 ) {
+                    printf( "Do not enter number except 1-100\n" ) ;
+                    break ;
+                }
                 if( number < LOWER || number > HIGHER ) {
-                    printf( "(Score=%d) \nGuess the winning number (%d-%d) : \n" ) ;
+                    // printf( "\nGuess the winning number (%d-%d) : \n", LOWER, HIGHER ) ;
                     score -= 10 ;
                     if (score < 0) score = 0 ;
                         printf( "score=%d\n", score ) ;
@@ -90,6 +97,7 @@ int main() {
                     printf( "Game over please try again\n" ) ;
                     break ;
                 }
+                
             } //end while
             printf( "Do you want to play game (1=play,-1=exit) : \n" ) ;
             scanf( "%d", &number ) ;
