@@ -27,6 +27,24 @@
 #include <stdio.h>
 #include <math.h>//Mathematics Library
 
+int Armstrong( int number ) ;
+
+int main() {
+
+    int number ;
+
+    printf( "Enter Number: " ) ;
+    scanf( "%d", &number ) ;
+
+    if ( Armstrong( number ) ) {
+        printf( "Pass. \n" ) ;
+    } else {
+        printf( "Not Pass. \n" ) ;
+    }    
+
+    return 0 ;
+}//end main function
+
 int Armstrong( int number ) {//function
     int orinumber, remain, result = 0, n = 0 ;//ค่าตัวเลขเดิม, เก็บหลักสุดท้ายของตัวเลข, ผลรวมเลขยกกำลัง, จำนวนหลักของตัวเลข
 
@@ -49,21 +67,6 @@ int Armstrong( int number ) {//function
         return 1 ;//Pass.
     } else {
         return 0 ;//Not Pass.
-    }       
+    }
+    return 0 ;       
 }//end function
-
-int main() {
-
-    int number ;
-
-    printf( "Enter Number: " ) ;
-    scanf( "%d", &number ) ;
-
-    if ( Armstrong( number ) ) {
-        printf( "Pass. \n" ) ;
-    } else {
-        printf( "Not Pass. \n" ) ;
-    }    
-
-    return 0 ;
-}//end main function
