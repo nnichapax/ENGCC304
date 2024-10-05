@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 #include <time.h> //เอาไว้รันเลขไม่ให้ซ้ำกันในแต่ละรอบ
 
 int main() {
@@ -10,7 +11,6 @@ int main() {
 
     printf( "Do you want to play game (1=play,-1=exit) : \n" ) ;
     scanf( "%d", &number ) ;
-
     
     while( true ) {
         score = 100, LOWER = 1, HIGHER = 100 ; //for reset

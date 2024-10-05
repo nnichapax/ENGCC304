@@ -7,19 +7,19 @@ int main() {
     float SalaryAmountHr ;
     float SUM ;
 
-    printf( "Input the Employees ID : " ) ;
+    printf( "Input the Employees ID (Max. 10 chars): " ) ;
     scanf( "%s", ID ) ;
 
-    printf( "Input the working hrs : " ) ;
+    printf( "Input the working hrs: " ) ;
     scanf( "%d", &WorkingHrs ) ;
 
-    printf( "Salary amount/hr : " ) ;
+    printf( "Salary amount/hr: " ) ;
     scanf( "%f", &SalaryAmountHr ) ;
 
     SUM = WorkingHrs * SalaryAmountHr ;
 
-    printf( "\n Employees ID = %s", ID ) ;
-    printf( "\n Salary = U$ %.2f", SUM ) ;
+    printf( "\nEmployees ID = %s", ID ) ;
+    printf( "\nSalary = U$ %.2f", SUM ) ;
 
     return 0 ;
 

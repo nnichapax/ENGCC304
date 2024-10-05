@@ -19,9 +19,9 @@ int main() {
     }
 
     if( palindrome ) {//ถ้าเป็นpalindrome เข้าอันนี้
-        printf( "Pass.\n" ) ;
+        printf( "Pass. \n" ) ;
     } else {//อันนี้คือไม่เป็น palindrome
-        printf( "Not Pass.\n" ) ;
+        printf( "Not Pass. \n" ) ;
     }
 
     return 0 ;

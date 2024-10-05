@@ -8,16 +8,16 @@ int main(){
     float floatingpointnumber ;
     char string [20] ;
 
-    printf( "Enter a character:\n" ) ;
+    printf( "Enter a character: \n" ) ;
     scanf( "%c", &character ) ;
 
-    printf( "Enter two integers:\n" ) ;
+    printf( "Enter two integers: \n" ) ;
     scanf( "%d %d", &integers1, &integers2 ) ;
 
-    printf( "Enter a floating-point number:\n" ) ;
+    printf( "Enter a floating-point number: \n" ) ;
     scanf( "%f", &floatingpointnumber ) ;
 
-    printf( "Enter a string:\n" ) ;
+    printf( "Enter a string: \n" ) ;
     scanf( "%s", string ) ;
 
     printf( "You entered character: %c", character ) ;

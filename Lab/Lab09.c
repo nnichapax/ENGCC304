@@ -11,7 +11,7 @@ int main() {
     int i ;
 
     for( i = 0 ; i < N ; i++ ) {// input values from user
-        printf( "Enter value[%d] :\n", i ) ;
+        printf( "Enter value[%d] : \n", i ) ;
         scanf( "%d", &values[i] ) ;
     }
     
