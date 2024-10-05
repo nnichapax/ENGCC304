@@ -1,20 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-#include <time.h> //เอาไว้รันเลขไม่ให้ซ้ำกันในแต่ละรอบ
 
 int main() {
 
-    srand( time( NULL ) ) ;
     int number = 0, score = 100 ;
     int LOWER = 1, HIGHER = 100 ;
+    int random ;
 
     printf( "Do you want to play game (1=play,-1=exit): \n" ) ;
     scanf( "%d", &number ) ;
     
     while( true ) {
         score = 100, LOWER = 1, HIGHER = 100 ; //for reset
-        int random = rand() % 100 + 1 ;
+
+        random = 42 ;
 
         if( number == 1 ) {
             while( true ) {
