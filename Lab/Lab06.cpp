@@ -9,7 +9,7 @@ int main() {
                 if( j == i ){
                     printf( "1" ) ;
                 } else{
-                   printf( "0" ) ;    
+                    printf( "0" ) ;    
                 }//end if-else
             }//end for
             printf( "\n" ) ;
@@ -20,7 +20,7 @@ int main() {
                 if( j == i ){
                     printf( "1" ) ;
                 } else{
-                   printf( "0" ) ;    
+                    printf( "0" ) ;    
                 }//end if-else
             }//end for
             printf( "\n" ) ;
