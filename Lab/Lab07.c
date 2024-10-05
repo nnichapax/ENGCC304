@@ -9,7 +9,7 @@ int main() {
     int number = 0, score = 100 ;
     int LOWER = 1, HIGHER = 100 ;
 
-    printf( "Do you want to play game (1=play,-1=exit) : \n" ) ;
+    printf( "Do you want to play game (1=play,-1=exit): \n" ) ;
     scanf( "%d", &number ) ;
     
     while( true ) {
@@ -19,7 +19,7 @@ int main() {
         if( number == 1 ) {
             while( true ) {
                 
-                printf( "Guess the winning number (%d-%d) : \n", LOWER, HIGHER ) ;
+                printf( "Guess the winning number (%d-%d): \n", LOWER, HIGHER ) ;
                 scanf( "%d", &number ) ;
                 if( number <= 0 || number > 100 ) {
                     printf( "Do not enter number except 1-100\n" ) ;

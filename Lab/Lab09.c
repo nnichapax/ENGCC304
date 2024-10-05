@@ -4,14 +4,14 @@ int main() {
 
     int N ;//N is numbers for specifying array 
 
-    printf( "Enter N : \n" ) ;
+    printf( "Enter N : " ) ;
     scanf( "%d", &N ) ;
 
     int values[N] ;
     int i ;
 
     for( i = 0 ; i < N ; i++ ) {// input values from user
-        printf( "Enter value[%d] : \n", i ) ;
+        printf( "Enter value[%d] : ", i ) ;
         scanf( "%d", &values[i] ) ;
     }
     

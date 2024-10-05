@@ -6,7 +6,7 @@ int main() {
     char word [50] ;
     int lenght, i, palindrome = 1 ;
 
-    printf( "Enter word: \n" ) ;
+    printf( "Enter word: " ) ;
     scanf( "%s", word ) ;
 
     lenght = strlen( word ) ;//lenght คือ ตัวความยาวของคำหรือวลี
