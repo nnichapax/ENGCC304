@@ -4,7 +4,7 @@ int main() {
 
     int score = -1 ;
 
-    printf( "enter score: " ) ;
+    printf( "Enter score: " ) ;
     scanf( "%d", &score ) ;
 
     if( score < 50 && score >= 0 ) { 

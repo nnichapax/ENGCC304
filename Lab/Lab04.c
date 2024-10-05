@@ -18,8 +18,8 @@ int main() {
 
     SUM = WorkingHrs * SalaryAmountHr ;
 
-    printf( "\nEmployees ID = %s", ID ) ;
-    printf( "\nSalary = U$ %.2f", SUM ) ;
+    printf( "\n Employees ID = %s", ID ) ;
+    printf( "\n Salary = U$ %.2f", SUM ) ;
 
     return 0 ;
 
