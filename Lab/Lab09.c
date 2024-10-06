@@ -17,7 +17,7 @@ int main() {
     
     printf( "Index: " ) ;
     for( i = 0 ; i < N ; i++ ) {
-        printf( "%1d ", i ) ;
+        printf( "%2d ", i ) ;
     }
     printf( "\n" ) ;
 
@@ -41,9 +41,9 @@ int main() {
             }
         }
         if( prime ) {
-            printf( "%1d ", number ) ;
+            printf( "%2d ", number ) ;
         } else {
-            printf( "%1c ", '#' ) ;
+            printf( "%2c ", '#' ) ;
         }
     }
     printf( "\n" ) ;

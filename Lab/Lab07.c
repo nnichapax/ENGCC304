@@ -15,10 +15,11 @@ int main() {
         score = 100, LOWER = 1, HIGHER = 100 ; //for reset
 
         random = 42 ;
-
+        score = 100 ;
+        
         if( number == 1 ) {
             while( true ) {
-                
+                score = 100 ;
                 printf( "Guess the winning number (%d-%d): \n", LOWER, HIGHER ) ;
                 scanf( "%d", &number ) ;
                 if( number <= 0 || number > 100 ) {
