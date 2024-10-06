@@ -15,13 +15,13 @@ int main() {
         scanf( "%d", &values[i] ) ;
     }
     
-    printf( "Index: " ) ;
+    printf( "Index:  " ) ;
     for( i = 0 ; i < N ; i++ ) {
-        printf( "%2d ", i ) ;
+        printf( "%2d", i ) ;
     }
     printf( "\n" ) ;
 
-    printf( "Array: " ) ;
+    printf( "Array:  " ) ;
 
     int j ;
 
