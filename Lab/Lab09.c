@@ -17,7 +17,7 @@ int main() {
     
     printf( "Index:  " ) ;
     for( i = 0 ; i < N ; i++ ) {
-        printf( "%2d", i ) ;
+        printf( "%3d", i ) ;
     }
     printf( "\n" ) ;
 
