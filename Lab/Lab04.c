@@ -3,9 +3,9 @@
 int main() {
 
     char ID [ 10 ] ;
-    int WorkingHrs ;
-    float SalaryAmountHr ;
-    float SUM ;
+    int WorkingHrs = 0 ;
+    float SalaryAmountHr = 0 ;
+    float SUM = 0 ;
 
     printf( "Input the Employees ID (Max. 10 chars): " ) ;
     scanf( "%s", ID ) ;
@@ -14,8 +14,8 @@ int main() {
     printf( "Salary amount/hr: " ) ;
     scanf( "%f", &SalaryAmountHr ) ;
     SUM = WorkingHrs * SalaryAmountHr ;
-    printf( "\n Employees ID = %s", ID ) ;
-    printf( "\n Salary = U$ %.2f", SUM ) ;
+    printf( "Employees ID = %s \n", ID ) ;
+    printf( "Salary = U$ %.2f", SUM ) ;
 
     return 0 ;
 
