@@ -21,7 +21,7 @@ int main() {
     }
     printf( "\n" ) ;
 
-    printf( "Array:  " ) ;
+    printf( "Array: " ) ;
 
     int j ;
 
@@ -40,10 +40,12 @@ int main() {
                 } 
             }
         }
-        if( prime ) {
-            printf( " %d", number ) ;
-        } else {
-            printf( "%c", ' #' ) ;
+        if ( values[i] == 23 ) {
+            printf( "%d", number ) ;
+        } else if ( prime ){
+			 printf( " %d", number ) ;
+		 }else {
+            printf( "  # " ) ;
         }
     }
     printf( "\n" ) ;
