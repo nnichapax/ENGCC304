@@ -15,9 +15,9 @@ int main() {
         scanf( "%d", &values[i] ) ;
     }
     
-    printf( "Index:  " ) ;
+    printf( "Index:   " ) ;
     for( i = 0 ; i < N ; i++ ) {
-        printf( " %d", i ) ;
+        printf( "%2d", i ) ;
     }
     printf( "\n" ) ;
 
