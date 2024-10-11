@@ -17,7 +17,11 @@ int main() {
     
     printf( "Index:   " ) ;
     for( i = 0 ; i < N ; i++ ) {
+<<<<<<< HEAD
         printf( "%d  ", i ) ;
+=======
+        printf( "%2d", i ) ;
+>>>>>>> 9bb1b2ab1db94d23e187873dff5695ea941d18bf
     }
     printf( "\n" ) ;
 
@@ -43,8 +47,13 @@ int main() {
         if ( values[i] == 23 ) {
             printf( "%d", number ) ;
         } else if ( prime ){
+<<<<<<< HEAD
 			printf( " %d", number ) ;
 		}else {
+=======
+			 printf( " %d", number ) ;
+		 }else {
+>>>>>>> 9bb1b2ab1db94d23e187873dff5695ea941d18bf
             printf( "  # " ) ;
         }
     }
