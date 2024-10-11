@@ -15,13 +15,13 @@ int main() {
         scanf( "%d", &values[i] ) ;
     }
     
-    printf( "Index:  " ) ;
+    printf( "Index:   " ) ;
     for( i = 0 ; i < N ; i++ ) {
-        printf( "%3d", i ) ;
+        printf( "%d  ", i ) ;
     }
     printf( "\n" ) ;
 
-    printf( "Array:  " ) ;
+    printf( "Array: " ) ;
 
     int j ;
 
@@ -40,10 +40,12 @@ int main() {
                 } 
             }
         }
-        if( prime ) {
-            printf( "%2d ", number ) ;
-        } else {
-            printf( "%2c ", '#' ) ;
+        if ( values[i] == 23 ) {
+            printf( "%d", number ) ;
+        } else if ( prime ){
+			printf( " %d", number ) ;
+		}else {
+            printf( "  # " ) ;
         }
     }
     printf( "\n" ) ;
