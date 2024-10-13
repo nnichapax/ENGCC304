@@ -32,9 +32,9 @@ int main() {
     S Student[3] ;
     int i ;
     char Grade[5][3] ;
-
+    
     for(i = 0 ; i < 3 ; i++ ) {//input data student
-        printf( "Enter details of Student %d:\n", i + 1 ) ;
+    printf( "Enter the details of Student %d:\n", i + 1 ) ;    
         printf( "Name: " ) ;
         scanf( " %[^\n]", Student[i].Name ) ;
         printf("ID: ") ;
@@ -44,7 +44,6 @@ int main() {
             printf( "Scores in Subject %d: ", j + 1 ) ;
             scanf( "%d", &Student[i].ScoreSub[j] ) ;
         }
-        printf( "\n" ) ;
     }
 
     for(i = 0 ; i < 3 ; i++) {//output data student
@@ -64,7 +63,7 @@ int main() {
         }
 
         float avg = Average( Student[i] ) ;//calculate and output avg
-        printf( "\nAverage Score: %.2f\n\n", avg ) ;
+        printf( "\nAverage Score: %.1f\n\n", avg ) ;
     }
 
     return 0 ;
